@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 
-const MODALIDADES = ["Todos", "Karatê Kids", "Karatê Adulto", "Karatê Competição"] as const;
+const MODALIDADES = [
+  "Todos", 
+  "Karatê Kids", 
+  "Karatê Para Todos",
+  "Karatê Inclusivo",
+  "Karatê Personal"
+] as const;
 
 type Modalidade = (typeof MODALIDADES)[number];
 
@@ -15,42 +21,30 @@ interface Horario {
 }
 
 const HORARIOS: Horario[] = [
-  // Segunda-feira
-  { day: "Segunda-feira", period: "Manhã", time: "08:00 - 09:00", type: "Karatê Kids", description: "Turma infantil (5-8 anos)" },
-  { day: "Segunda-feira", period: "Tarde", time: "17:00 - 18:00", type: "Karatê Kids", description: "Turma infantil (9-12 anos)" },
-  { day: "Segunda-feira", period: "Noite", time: "19:00 - 20:30", type: "Karatê Adulto", description: "Turma adulto iniciante" },
-  
   // Terça-feira
-  { day: "Terça-feira", period: "Manhã", time: "07:00 - 08:00", type: "Karatê Adulto", description: "Turma adulto avançado" },
-  { day: "Terça-feira", period: "Tarde", time: "16:00 - 17:00", type: "Karatê Kids", description: "Turma infantil (5-8 anos)" },
-  { day: "Terça-feira", period: "Noite", time: "20:00 - 21:30", type: "Karatê Competição", description: "Treino de competição" },
+  { day: "Terça-feira", period: "Noite", time: "19:00 - 20:00", type: "Karatê Kids", description: "Turma infantil (5-10 anos)" },
+  { day: "Terça-feira", period: "Noite", time: "20:00 - 21:30", type: "Karatê Para Todos", description: "Turma de 11 para cima" },
   
   // Quarta-feira
-  { day: "Quarta-feira", period: "Manhã", time: "08:00 - 09:00", type: "Karatê Kids", description: "Turma infantil (5-8 anos)" },
-  { day: "Quarta-feira", period: "Tarde", time: "17:00 - 18:00", type: "Karatê Kids", description: "Turma infantil (9-12 anos)" },
-  { day: "Quarta-feira", period: "Noite", time: "19:00 - 20:30", type: "Karatê Adulto", description: "Turma adulto iniciante" },
+  { day: "Quarta-feira", period: "Tarde", time: "16:00 - 17:00", type: "Karatê Inclusivo", description: "Turma para crianças atípicas" },
+  { day: "Quarta-feira", period: "Tarde", time: "17:30 - 18:30", type: "Karatê Personal", description: "Aulas individuais" },
   
   // Quinta-feira
-  { day: "Quinta-feira", period: "Manhã", time: "07:00 - 08:00", type: "Karatê Adulto", description: "Turma adulto avançado" },
-  { day: "Quinta-feira", period: "Tarde", time: "16:00 - 17:00", type: "Karatê Kids", description: "Turma infantil (5-8 anos)" },
-  { day: "Quinta-feira", period: "Noite", time: "20:00 - 21:30", type: "Karatê Competição", description: "Treino de competição" },
+  { day: "Quinta-feira", period: "Tarde", time: "19:00 - 20:00", type: "Karatê Kids", description: "Turma infantil (5-10 anos)" },
+  { day: "Quinta-feira", period: "Noite", time: "20:00 - 21:30", type: "Karatê Para Todos", description: "Turma de 11 para cima" },
   
   // Sexta-feira
-  { day: "Sexta-feira", period: "Manhã", time: "08:00 - 09:00", type: "Karatê Kids", description: "Turma infantil mista" },
-  { day: "Sexta-feira", period: "Tarde", time: "17:00 - 18:00", type: "Karatê Kids", description: "Turma infantil mista" },
-  { day: "Sexta-feira", period: "Noite", time: "19:00 - 20:30", type: "Karatê Adulto", description: "Turma adulto mista" },
-  
-  // Sábado
-  { day: "Sábado", period: "Manhã", time: "09:00 - 11:00", type: "Karatê Competição", description: "Treino intensivo de competição" },
-  { day: "Sábado", period: "Manhã", time: "11:00 - 12:00", type: "Karatê Kids", description: "Turma infantil especial" },
+  { day: "Sexta-feira", period: "Tarde", time: "16:00 - 17:00", type: "Karatê Inclusivo", description: "Turma para crianças atípicas" },
+  { day: "Sexta-feira", period: "Tarde", time: "17:30 - 18:30", type: "Karatê Personal", description: "Aulas individuais" },
 ];
 
 const DAYS = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 
 const TYPE_COLORS: Record<Exclude<Modalidade, "Todos">, string> = {
   "Karatê Kids": "bg-green-500/20 text-green-400 border-green-500/30",
-  "Karatê Adulto": "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  "Karatê Competição": "bg-primary/20 text-primary border-primary/30",
+  "Karatê Inclusivo": "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+  "Karatê Personal": "bg-purple-500/20 text-purple-400 border-purple-500/30",
+  "Karatê Para Todos": "bg-red-500/20 text-red-400 border-red-500/30",
 };
 
 export function Schedule() {
