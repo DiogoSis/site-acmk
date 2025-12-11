@@ -43,7 +43,7 @@ export function CTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://wa.me/5500000000000?text=Olá! Gostaria de agendar uma aula experimental de Karatê na ACMK."
+              href="https://wa.me/5521988505337?text=Olá! Gostaria de agendar uma aula experimental de Karatê na ACMK."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:-translate-y-1 hover:shadow-xl"

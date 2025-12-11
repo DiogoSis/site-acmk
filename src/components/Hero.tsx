@@ -61,7 +61,7 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
             <Link
-              href="https://wa.me/5500000000000?text=Olá! Gostaria de agendar uma aula experimental de Karatê na ACMK."
+              href="https://wa.me/5521988505337?text=Olá! Gostaria de agendar uma aula experimental de Karatê na ACMK."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-lg"

@@ -11,8 +11,8 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "Endereço",
-    value: "Rua do Karatê, 123 - Centro",
-    subValue: "Cidade - Estado",
+    value: "Rua Santo André, 1, Km32",
+    subValue: "Nova Iguaçu, RJ - CEP 26298-662",
   },
   {
     icon: (
@@ -21,28 +21,18 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: "Telefone / WhatsApp",
-    value: "(00) 00000-0000",
-    link: "https://wa.me/5500000000000",
-  },
-  {
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-    label: "Horário de Funcionamento",
-    value: "Segunda a Sexta: 07h às 21h",
-    subValue: "Sábado: 09h às 12h",
+    value: "(21) 98850-5337",
+    link: "https://wa.me/5521988505337",
   },
   {
     icon: (
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
       </svg>
     ),
     label: "Instagram",
-    value: "@acmk_karate",
-    link: "https://instagram.com/acmk_karate",
+    value: "@acmk_km32",
+    link: "https://instagram.com/acmk_km32",
   },
 ];
 
@@ -77,7 +67,7 @@ export function Contact() {
         `Mensagem: ${formData.message || "Gostaria de mais informações sobre as aulas de Karatê."}`
     );
 
-    window.open(`https://wa.me/5500000000000?text=${message}`, "_blank");
+    window.open(`https://wa.me/5521988505337?text=${message}`, "_blank");
 
     setIsSubmitting(false);
     setSubmitted(true);
@@ -140,10 +130,10 @@ export function Contact() {
               ))}
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div className="mt-8 aspect-video bg-bg-dark-card rounded-xl overflow-hidden relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975847881846!2d-46.65390368502205!3d-23.564611284680623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAvenida%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1634567890123!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1839.5!2d-43.606102297118774!3d-22.855118240966174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUxJzE4LjQiUyA0M8KwMzYnMjEuNiJX!5e0!3m2!1spt-BR!2sbr!4v1702300000000!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -151,6 +141,7 @@ export function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0"
+                title="Localização ACMK - Rua Santo André, 1, Km32, Nova Iguaçu, RJ"
               />
             </div>
           </div>
