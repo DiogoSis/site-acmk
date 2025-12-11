@@ -429,3 +429,31 @@ Antes de publicar uma peça ou página, confirme:
 - [ ] Títulos usam fonte de impacto; corpo de texto é legível?
 - [ ] A foto mostra pessoas reais e transmite emoção positiva?
 - [ ] O texto está em tom motivador, acolhedor e educativo?
+
+---
+
+## 12. Informações de Contato
+
+**Dados oficiais para uso em materiais:**
+
+| Campo | Informação |
+|-------|------------|
+| **Nome** | ACMK – Associação Corpo e Mente de Karatê |
+| **Site** | [acmk.mktforce.online](https://acmk.mktforce.online) |
+| **Endereço** | Rua Santo André, 1, Km32 – Nova Iguaçu, RJ |
+| **CEP** | 26298-662 |
+| **WhatsApp** | (21) 98850-5337 |
+| **Instagram** | @acmk_km32 |
+
+**Link do WhatsApp para CTAs:**
+
+```text
+https://wa.me/5521988505337
+```
+
+**Coordenadas para mapas:**
+
+```text
+Latitude: -22.855118240966174
+Longitude: -43.606102297118774
+```

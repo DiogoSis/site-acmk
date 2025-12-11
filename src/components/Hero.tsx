@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const STATS = [
-  { value: "10+", label: "Anos de Experiência" },
-  { value: "500+", label: "Alunos Formados" },
+  { value: "15+", label: "Anos de Experiência" },
+  { value: "200+", label: "Alunos Formados" },
   { value: "50+", label: "Medalhas Conquistadas" },
 ];
 

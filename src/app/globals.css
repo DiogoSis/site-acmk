@@ -18,7 +18,7 @@
   /* Texto */
   --text-light: #FFFFFF;
   --text-dark: #111111;
-  --text-muted: #4B4B4B;
+  --text-muted: #9f9f9f;
   
   /* Gradientes */
   --gradient-fire: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);

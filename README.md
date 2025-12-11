@@ -11,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-[Ver Demo](#) • [Reportar Bug](https://github.com/DiogoSis/site-acmk/issues) • [Solicitar Feature](https://github.com/DiogoSis/site-acmk/issues)
+[Ver Site](https://acmk.mktforce.online) • [Reportar Bug](https://github.com/DiogoSis/site-acmk/issues) • [Solicitar Feature](https://github.com/DiogoSis/site-acmk/issues)
 
 </div>
 
@@ -219,9 +219,9 @@ Este projeto está sob a licença ISC. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **ACMK - Associação Corpo e Mente de Karatê**
 
-- 📧 Email: <contato@acmk.com.br>
-- 📱 WhatsApp: (00) 00000-0000
-- 📸 Instagram: [@acmk_karate](https://instagram.com/acmk_karate)
+- 📍 Endereço: Rua Santo André, 1, Km32 - Nova Iguaçu, RJ - CEP 26298-662
+- 📱 WhatsApp: (21) 98850-5337
+- 📸 Instagram: [@acmk_km32](https://instagram.com/acmk_km32)
 
 ---
 
