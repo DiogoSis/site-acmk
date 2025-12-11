@@ -5,6 +5,11 @@ import Image from "next/image";
 
 const GALLERY_IMAGES = [
   {
+    src: "/photo/todos_da_acmk.jpg",
+    alt: "Toda a equipe ACMK reunida",
+    caption: "Nossa família ACMK reunida",
+  },
+  {
     src: "/photo/campeonato_karate.jpeg",
     alt: "Campeonato de Karatê - Equipe ACMK",
     caption: "Equipe ACMK no campeonato regional",
@@ -15,9 +20,19 @@ const GALLERY_IMAGES = [
     caption: "Nossos atletas conquistando medalhas",
   },
   {
+    src: "/photo/atleta_mirim.jpg",
+    alt: "Atleta mirim da ACMK",
+    caption: "Nossos pequenos guerreiros",
+  },
+  {
     src: "/photo/criancas_com_sensei.jpeg",
     alt: "Crianças treinando com o Sensei",
     caption: "Turma infantil com o Sensei",
+  },
+  {
+    src: "/photo/equipe_2.jpg",
+    alt: "Equipe ACMK",
+    caption: "Equipe ACMK em ação",
   },
   {
     src: "/photo/etapa_torneio.jpeg",
@@ -32,7 +47,7 @@ const GALLERY_IMAGES = [
   {
     src: "/banner/dia_mundial_karate_2.jpeg",
     alt: "Dia Mundial do Karatê - Turma",
-    caption: "Nossa família ACMK reunida",
+    caption: "Comemorando o Dia Mundial do Karatê",
   },
 ];
 

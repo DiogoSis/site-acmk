@@ -13,16 +13,22 @@ export function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/banner/banner_frase.jpeg"
-          alt="ACMK Karatê"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/80 via-bg-dark/60 to-bg-dark" />
+      {/* Background with Logo */}
+      <div className="absolute inset-0 z-0 bg-bg-dark">
+        {/* Logo positioned center-right */}
+        <div className="absolute inset-0 flex items-center justify-end">
+          <div className="relative w-[90%] h-[90%] md:w-[65%] md:h-[95%] mr-[-15%] md:mr-[-8%]">
+            <Image
+              src="/logo/logo_circular_transparente.png"
+              alt="ACMK Logo"
+              fill
+              className="object-contain opacity-15 md:opacity-25"
+              priority
+            />
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-dark via-bg-dark/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-transparent to-bg-dark" />
       </div>
 
       {/* Content */}
